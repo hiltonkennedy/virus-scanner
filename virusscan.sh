@@ -1,7 +1,7 @@
                                                                                                                                                                                                  
 #!/bin/bash 
 SCAN_DIR="/"
-MALWARE_DB="/home/hilton/Documents/malware_signature.txt"
+MALWARE_DB="/home/users/Documents/malware_signature.txt"
 QUARANTINE_DIR="/var/quarantine"
 SCAN_LOG="scanner.log"
 
@@ -24,7 +24,7 @@ find "$SCAN_DIR"  -type f | while  IFS= read -r file;do
 
        fi
 done 
-EMAIL="hiltonkennedy71.com"
+EMAIL="xyz.com"
 SUBJECT="🚨 Malware Alert: Threat Detected!"
 BODY="Malware detected on $(hostname)  at $(date). Check logs at $LOG_FILE"
 
